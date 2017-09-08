@@ -1,0 +1,116 @@
+
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+   {% include 'head.html' %}
+    <body>
+ 
+       
+ {% include 'navbar.html' %}
+
+
+
+   
+
+
+<div class="container-fluid space one">
+	 <div class="container">
+	 	<h1 class="text-center"><u> Gharelu Crafts Projects </u></h1><br>
+		
+		 	<div class="row">
+				<div class="col-md-4">
+					<div class="phome text-center">
+						<h2>Woollen craft</h2>
+						<img src="{% static 'images/project.jpg' %}" class="img-rounded proj" ><br>
+						<a href="{% url 'knitting' %}"><button class="btn 	btn-success"><strong><b>View Details</b></strong></button></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="phome text-center">
+						<h2>Dhaka craft </h2>
+						<img src="{% static 'images/dhakap.jpg' %}" class="img-rounded proj" ><br>
+						<a href="project-knitting.html"><button class="btn 	btn-success"><strong><b>View Details</b></strong></button></a>
+					</div>
+				</div>
+				<div class="phome text-center">
+						<h2>Pashmina craft</h2>
+						<img src="{% static 'images/pashminap.png' %}" class="img-rounded proj" ><br>
+						<a href="project-knitting.html"><button class="btn 	btn-success"><strong><b>View Details</b></strong></button></a>
+					</div>
+				
+				</div><br><br>
+
+				<div class="row">
+		
+				<div class="col-md-4">
+				<div class="phome text-center">
+						<h2>Ceramics craft</h2>
+						<img src="{% static 'images/candel.jpg' %}" class="img-rounded proj" ><br>
+						<a href="project-knitting.html"><button class="btn 	btn-success"><strong><b>View Details</b></strong></button></a>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="phome text-center">
+						<h2>Silk </h2>
+						<img src="{% static 'images/silkp.jpeg' %}" class="img-rounded proj" ><br>
+						<a href="project-knitting.html"><button class="btn 	btn-success"><strong><b>View Details</b></strong></button></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="phome text-center">
+						<h2>Cotton</h2>
+						<img src="{% static 'images/cottonP.jpg' %}" class="img-rounded proj" ><br>
+						<a href="project-knitting.html"><button class="btn 	btn-success"><strong><b>View Details</b></strong></button></a>
+					</div><br>
+			
+					
+				</div>
+
+
+
+       <div class="row">
+				<div class="col-md-4">
+					<div class="phome text-center">
+						<h2>Metal Craft</h2>
+						<img src="{% static 'images/pot.jpg' %}" class="img-rounded proj" ><br>
+						<a href="project-knitting.html"><button class="btn 	btn-success"><strong><b>View Details</b></strong></button></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="phome text-center">
+						<h2>Wood Craft</h2>
+						<img src="{% static 'images/wood.jpg' %}" class="img-rounded proj" ><br>
+						<a href="project-knitting.html"><button class="btn 	btn-success"><strong><b>View Details</b></strong></button></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="phome text-center">
+						<h2>Bamboo Craft</h2>
+						<img src="{% static 'images/bam.jpg' %}" class="img-rounded proj" ><br>
+						<a href="project-knitting.html"><button class="btn 	btn-success"><strong><b>View Details</b></strong></button></a>
+					</div>
+				</div>
+			</div><br><br>
+
+			
+			<center><button type="button"  class="btn btn-danger" style="background-color:#29293d ; border-color: #29293d ; color:white; padding:16px;">More project</button></center><br><br>
+	 </div>
+</div>
+<div class="container-fluid height space pebbless text-center"><br><br>
+	<h1 ><img src="{% static 'images/quote.png' %}" class="quote">Remember, you will always fail in business if you don't try to open your own business"</h1>
+	<h2>-Amit Kalantri</h2><br>
+</div>
+
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</header>
+</body>
+{% include 'footer.html' %}
+</html>

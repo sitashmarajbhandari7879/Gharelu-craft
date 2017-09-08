@@ -1,0 +1,139 @@
+
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+ {% include 'head.html' %}
+    <body>
+ 
+      
+ {% include 'navbar.html' %}
+
+<!-- <div class="row text-center">
+	<div class="col-md-12">
+		<h1>Stiching</h1>
+		<legend></legend>
+	</div>
+</div> -->
+<div class="container">
+	<div class="row text-center">
+	<div class="col-md-12">
+		
+	</div>
+</div>
+</div>
+<div class="container-fluid  space one">
+<h1 class="text-center" style="text-transform: uppercase;"><u>Knitting & Stitching | Small Business</u></h1><br>
+		<legend></legend> 
+	<div class="container ">
+		<div class="row text-center">
+			<div class="col-md-4"><img src="{% static 'images/knitting3.jpg' %}" class="projectGallery"></div>
+			<div class="col-md-4"><img src="{% static 'images/k1.jpg' %}" class="projectGallery"></div>
+			<div class="col-md-4"><img src="{% static 'images/k2.jpg' %}" class="projectGallery"></div>
+		</div><br>
+	
+	</div>
+</div>
+<div class="container-fluid  coll space two">
+	<div class="container">
+		<div class="row">
+			<h2 class="text-center" style="text-transform: uppercase;"><u>Statistical Analysis</u></h2><br>
+			<div class="col-md-8">
+				<img src="{% static 'images/bargraph.jpg' %}" class="pieone">
+			</div>
+			<div class="col-md-4">
+				<img src="{% static 'images/pie.jpg' %}" class="pie">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid space one">
+	<div class="container">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8 line">
+				<h2 class="text-center" style="text-transform: uppercase;"><u>Specification & Recommendation</u></h2><br>
+				<ol>
+					<li>Dedication and intrest.</li>
+					<li>Atleast 2-3 hours per day.</li>
+					<li>CTEVT license exam to start business</li>
+					<li>Knitting tools, wool, etc </li>
+					<li>Small working area:Home, shop, and in any small place to knit. </li>
+					<li>Estimated budget of at least  <button type="button" class="btn btn-success"> <strong>Rs:4,000/</strong> </button></li>
+				</ol>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+</div>
+
+
+</div>
+
+
+
+<!-- <div class="container-fluid space one">
+	<div class="container">
+		 <div class="row">
+		 	 <h1 class="text-center"style="text-transform: uppercase;"><u>Markets & Demands</u></h1><br>
+		 	 {% for supplier in supplier %}
+		 	 {% if supplier.publish %}
+		 	 <div class="col-md-4 ">
+		 	 
+		 	 	<div class="market text-center">
+		 	 		<h4 class="text-center">{{ supplier.product_name }}</h4>
+		 	 		<div class="text-center">
+		 	 			<img src="{{ supplier.product_image.url }}" class="markThumb" alt="Woolen Sweater">
+		 	 		</div>
+		 	 		<li><strong>Demand: </strong>10 pcs/</li>
+		 	 		<li><STRONG>Price: </STRONG><button type="button" class="btn btn-info"> <strong>{{ supplier.product_price }}/</strong> </button></li>
+		 	 		<strong>Company : {{ supplier.organization }},{{ supplier.location }} </strong>
+		 	 		<br>
+		 	 		<a href="{% url 'contact-supplier' %}"><button type="button" class="btn btn-danger"> <strong>Contact Supplier</strong></button></a> 
+		 	 	</div>
+		 	 	
+		 	 </div>
+		 	 {% endif %}
+		 	 {% endfor %}
+		 </div>
+		 <div class="row">
+		 	<br><br>
+		 	 
+		 	 
+		 </div>
+	</div>
+</div> -->
+
+<div class="container-fluid space two">
+	<div class="container">
+		<div class="row">
+		<h1 class="text-center"style="text-transform: uppercase;"><u>Feedbacks</u></h1><br>
+			<div class="col-md-3">
+				<img src="{% static 'images/people2.jpg' %}" class="commentPeople">
+			</div>
+			<div class="col-md-7"><br><br>
+				<p class="comment text-center">I am now self dependent and i run my family from this business. I have had trianings and class which have made me earn my living. <br><br><strong>-Saraswati Gautam, Maila Silai Udhyog</strong></p>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				
+			</div>
+			<div class="col-md-7"><br><br>
+				<p class="comment text-center">I have had trianings and class which have made me earn my living.I have had trianings and class which have made me earn my living.I am now self dependent and i run my family from this business. I have had trianings and class which have made me earn my living. <br><br><strong>-Mina Ale Magar, Saili silai Udhyog</strong></p>
+			</div>
+			<div class="col-md-3">
+				<img src="{% static 'images/people1.jpg' %}" class="commentPeople">
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+{% include 'footer.html' %}
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects | Kintting </title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap/css/bootstrap.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+<div class="container-fluid space one">
+	<div class="container">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8 line">
+				<h2 class="text-center" style="text-transform: uppercase;"><u>Supplier Details</u></h2><br>
+				<table class="table table-bordered">
+				{% for supplier in supplier %}
+		 	 	{% if supplier.publish %}
+										<thead>
+											<tr>
+												<th>Supplier Name</th>
+												<th>{{ supplier.name }}</th>
+												
+											</tr>
+										</thead>
+										<tbody>
+										<tr>
+												
+												<td>Organization</td>
+												<td>{{ supplier.organization }}</td>
+												
+											</tr>
+											<tr>
+												
+												<td>Contact No.</td>
+												<td>{{ supplier.contact }}</td>
+												
+											</tr>
+											<tr>
+												
+												<td>Location</td>
+												<td>{{ supplier.location }}</td>
+												
+											</tr>
+											
+											
+											<tr>
+												
+												<td>Business Category</td>
+												<td>{{ supplier.business_type }}</td>
+												
+											</tr>
+											
+											</tbody>
+											{% endif %}
+		 	 {% endfor %} 
+									</table>
+
+	
+								
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+</div> 
+</body>
+</html>

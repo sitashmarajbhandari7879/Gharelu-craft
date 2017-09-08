@@ -1,0 +1,22 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<body>
+{% include 'head.html' %}
+
+{% include 'navbar.html' %}
+
+{% for forums in forum %}
+<p style="background-color: lightgrey; color:black; padding:15px;">
+<strong>{{ forums.name }}</strong><br>
+{{ forums.contact }}<br>
+{{ forums.address }}<br>
+{{ forums.message }}</p><hr>
+{% endfor %} <br>
+</body>
+
+<center><a href="{% url 'forumform' %}"><button type="button" class="btn btn-danger dang" style="background-color:#5cb85c;border-color: #5cb85c; font-size: 40px;" > Wanna Collabrorate????</button></a></center>
+
+{% include 'footer.html' %}
+</html>

@@ -1,0 +1,104 @@
+     {% load staticfiles %}
+       <header class="header">
+                
+            <div class="mainmenu-area" id="menu-fixed" style=" background-color: #29293d;  height:100px; 
+            opacity:0.8;">
+                <div class="container">
+                    <div class="row">
+                    
+                        <div class="nav-menu">
+                            <nav class="navbar navbar-default">
+
+                                <div class="navbar-header">
+                                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar-one bar-stick"></span>
+                                    <span class="icon-bar-two bar-stick"></span>
+                                    <span class="icon-bar-three bar-stick"></span>
+                                  </button>
+                                </div>
+
+
+                                <div >
+
+                                  <ul class="nav navbar-nav" >
+                                  <li>
+                                 
+                                  <img src="{% static 'images/ghar1.png' %}" style="width:130px; height:100px; padding:10px;" >
+
+                                  </li>
+
+
+                                    <li >
+                                      <a href="{% url 'home' %}" style="color:white; padding-top:40px; padding-left: 100px; ">HOME</a>
+                                     
+                                    </li>               
+                                  
+                                    <li class="#">
+                                      <a href="{% url 'filter:product-filter' %}" style="color:white; padding-top:40px;"><span>MARKET</span></a>
+                                      </li>
+
+                                        <li class="#">
+                                      <a href="{% url 'project' %}" style="color:white; padding-top:40px;" >PROJECT</a>
+                              
+                                    </li>
+                                
+                                      
+                                    <li class="#">
+                                      <a href="{% url 'training' %}" style="color:white;padding-top:40px;"><span>TRAINING</span></a>
+
+
+
+                                      
+                                    </li>
+
+                                     <li><a href="{% url 'forumlist' %}" style="color:white; padding-top:40px;"><span>FORUM</span></a></li>
+                                 
+                                      <li class="#">
+                                      <a href="{% url 'volunteer' %}" style="color:white; padding-top:40px;"><span>VOLUNTEER</span></a>
+                             
+                                    </li> 
+                                
+                                    <li><a href="{% url 'login' %}" style="color:white; padding-top:40px;"><span>Login</span></a></li>
+                                 
+
+                                  </li>
+                                    <li><a href="{% url 'signup' %}" style="color:white; padding-top:40px;"><span>Signup</span></a></li>
+                                  </ul>
+
+
+
+
+
+
+
+                                     
+                                </div><!-- /.navbar-collapse -->
+                            </nav>
+                        </div>
+                      <!--   <div class="mainmenu-right">
+                            <div class="mainmenu-icon">
+
+                                <div class="chart-icon">
+                                    
+                                      <span class="d"><a href="" style="color:white;
+                                      padding-top: 40px;">login</a></span>
+                                     
+                                    <span class="d"><a href="" style="color:white;
+                                    padding-top: 40px;">signup</a></span> -->
+                                     
+                               <!--      
+                                </div>    
+                            </div> 
+                            
+                        </div>  -->                                                 
+                        <!--    <div class="search-box-text">
+                                <form action="#">
+                                    <input type="text" name="search" id="all-search" placeholder="Search Here"/>
+                                </form>
+                            </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </header>

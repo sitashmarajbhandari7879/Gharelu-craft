@@ -1,0 +1,86 @@
+
+{% load staticfiles %}
+{% load widget_tweaks %}
+<!doctype html>
+<html class="no-js" lang="en">
+   {% include 'head.html' %}
+    <body>
+ 
+ {% include 'navbar.html' %}
+ <form method="get">
+ <center><div class="row">
+        <div class="form-group col-sm-12">
+          {{ filter.form.catagories.label_tag }}
+          {% render_field filter.form.catagories class="form-control" %}
+        </div><br>
+        <button type="submit" class="btn btn-primary " style="font-size: 20px;">
+        <span class="glyphicon glyphicon-search"></span>Search
+      </button>
+      </div>
+      </form></center><br><br>
+ 
+<div class="container-fluid">
+	<div class="container one space">
+		<div class="row">
+		<h1 class="text-center"><u > Product|Item</u></h1><br><br>
+		{% for filter in filter.qs %}
+			<div class="col-md-3">
+				<div class="market text-center">
+				
+		 	 		<h4 class="text-center">{{ filter.name}}</h4>
+		 	 		<div class="text-center">
+		 	 			<img src="{{ filter.image.url}}" class="markThumb" >
+		 	 		</div>
+		 	 		
+		 	 		
+		 	 		<button type="button" class="btn btn-info"> 
+		 	 		<strong>Price:{{ filter.price }}</strong> </button>
+		 	 		<li><STRONG>Quantity:{{ filter.quantity }} </STRONG></li>
+		 	 		<li><strong>Description:{{ filter.description }}</strong></li>
+		 	 		<br>
+		 	 		<button type="button" class="btn btn-danger dang" style="background-color:#5cb85c;border-color: #5cb85c;"> <a href="#"><strong>Contact Us</strong></a> </button>
+		 	 		
+		 	 	</div><br>
+			</div>
+			{% endfor %}
+
+	</div>
+</div>
+
+<div class="container-fluid space two">
+	
+	<div class="container one">
+	<h1 class="text-center"><u> Sell Your Product Here | Free Promotion </u></h1><br><br>
+		<div class="row ">
+			<div class="col-md-2">
+				
+			</div>	
+			<div class="col-md-8">
+				<form class="form-horizontal well">
+  
+  <div class="form-group text-center"> 
+    <div>
+      <a href= "{% url 'supplier-form' %}"<button type="submit" class="btn btn-warning"><strong>Click Here</strong></button></a>
+    </div>
+  </div>
+</form>
+			</div>
+			<div class="col-md-2">
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid space">
+	
+	<div class="container one text-container ">
+	<h1 class="text-center"><u> FIND MORE CUSTOMERS; GLOBALLY </u></h1><br>
+	<h4>NepBay with its innovative marketing tools helps you reach just over a billion people worldwide.</h4>
+	<a href="#">Start Selling</a>
+	</div>
+</div>
+
+{% include 'footer.html' %}
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+{% for products in product %}
+{{ products.name }}<br>
+<img src='{{ products.image.url }}'><br>
+Price:{{ products.price }}<br>
+{% endfor %}

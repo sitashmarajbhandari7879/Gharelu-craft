@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+   {% include 'head.html' %}
+    <body>
+ 
+ {% include 'navbar.html' %}
+
+
+<br><br>
+<div class="container-fluid space one ">
+	<form method='post' enctype = 'multipart/form-data'> {% csrf_token %}
+{{ form.as_p }}
+<input type="submit" name="Send" value="Submit"/>
+</form>
+</div>
